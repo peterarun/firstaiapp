@@ -4,7 +4,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import LLMChain
 from langchain_core.prompts import PromptTemplate
 
-os.environ['GOOGLE_API_KEY']  = "AIzaSyDr9gj-u4q0q7oQ1G_mx7GIVnudd0lQ4xY"
+os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 
 st.header(" A Tweet Generataro")
 st.subheader("Generate some tweets with Generative AIIII")
